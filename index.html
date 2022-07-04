@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@6.6.96/css/materialdesignicons.min.css">
+</head>
+<body>
+
+      <section action="formLogin" class="sectionLogin">
+          <h1>JavaScript Quiz</h1>
+          <p class="paragraph">Evaluez vos compétences en JavaScript en répondant aux question que nous avons spécialement séléctionné pour vous. C'est futi et c'est gratuit.</p>
+         <form id="form">
+            <div id="message"></div>
+            <div class="begin">
+                <label for="text" class="emailLab">Nom</label>
+                <input type="text" id="username" name="username" placeholder="Entrez votre nom">
+                <span class="error" id="erreurNom"></span>
+             </div>
+
+             <div class="begin">
+                <label class="emailLab" for="text">E-mail</label>
+                <input type="email" id="email" name="mail" placeholder="Entrez votre adresse mail">
+                <span class="error" id="erreurMail"></span>
+             </div>
+
+             <div class="button">
+                <button type="button" class="buttonBegin" id="buttonBegin" onclick="">Commencer</button>
+             </div>
+             
+         </form>
+        </section>
+
+        <Section class="quizOne" id="quizOne">
+            <p class="paragraph1" id="question-affiche"></p>
+            <div class="question">
+                <label for="name" id="chargeQuiz"></label>
+                <label for="num" id="minuteur">60</label>
+            </div>
+            <div class="container">
+                <div class="progressbar" id="progressBarre">
+                    <div class="progressBar" id="progressBarr"></div>
+                </div>
+                <form action="" id="questionForm">
+                    <div class="assert">
+                        <label for="text1" class="answer">
+                            <input type="radio" id="text1" class="ts assertions" name="1">
+                            <span></span>
+                        </label>
+                    </div>
+                    <div class="assert">
+                        <label for="text2" class="answer" >
+                            <input type="radio" id="text2" class="ts assertions" name="1">
+                            <span></span>
+                        </label>
+                    </div>
+                    <div class="assert">
+                        <label for="text3" class="answer">
+                            <input type="radio" id="text3" class="ts assertions" name="1">
+                            <span></span>
+                        </label>
+                    </div>
+                    <div class="assert">
+                        <label for="text4" class="answer">
+                            <input type="radio" id="text4" class="ts assertions" name="1">
+                            <span></span>
+                        </label>
+                    </div>
+                </form>
+    
+                <div class="buttonQuitter">
+                    <button class="quitter">Quitter</button>
+                    <button type="button" class="suivant-inactif" id="btn-suivant" disabled>Suivant</button>
+                </div>
+            </div>
+        </Section>
+
+        <section class="end">
+            <h1 class="prenom"></h1>
+                <p class="adMail"></p>
+
+         <form action="" class="formScore">
+           
+            <div id="svgFaled">
+                <svg class="congrat" width="174" height="100" viewBox="0 0 174 174" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M118.776 59.9844H110.806C109.073 59.9844 107.425 60.817 106.405 62.2443L79.6936 99.2873L67.5951 82.499C66.5756 81.0887 64.9443 80.2391 63.1941 80.2391H55.2248C54.1203 80.2391 53.4746 81.4965 54.1203 82.3971L75.2926 111.76C75.7927 112.458 76.4521 113.026 77.216 113.419C77.9799 113.811 78.8263 114.016 79.6851 114.016C80.5438 114.016 81.3903 113.811 82.1541 113.419C82.918 113.026 83.5774 112.458 84.0775 111.76L119.863 62.1424C120.526 61.2418 119.88 59.9844 118.776 59.9844Z" fill="#028A3D"/>
+                    <path d="M87 10.875C44.9613 10.875 10.875 44.9613 10.875 87C10.875 129.039 44.9613 163.125 87 163.125C129.039 163.125 163.125 129.039 163.125 87C163.125 44.9613 129.039 10.875 87 10.875ZM87 150.211C52.098 150.211 23.7891 121.902 23.7891 87C23.7891 52.098 52.098 23.7891 87 23.7891C121.902 23.7891 150.211 52.098 150.211 87C150.211 121.902 121.902 150.211 87 150.211Z" fill="#028A3D"/>
+                    </svg> 
+            </div>
+                        
+                <p class="score"></p>
+                <div class="buttonAccueil">
+                    <button class="accueil" id="accueil" >Accueil</button>
+                </div>
+
+            </form>
+                
+        </section> 
+        <script src="jquery-.js"></script>
+        <script src="script.js"></script>
+
+</body>
+
+
+</html>
